@@ -96,10 +96,11 @@
     <string name="setting_theme_default_color">預設顏色</string>
     <string name="setting_theme_apply">應用</string>
     <string name="setting_theme_profile_bg">個人檔案背景</string>
-
+    <string name="setting_contacts_import_from_local">从本地导入</string>
+    <string name="setting_contacts_export_to_local">导出到本地</string>
     <string name="setting_language_title">語言</string>
     <string name="setting_language_hint">選擇語言</string>
-
+    <string name="setting_contacts_title">Contacts</string>
     <string name="toast_save_profile_banner_fail">個人橫幅背景存檔失敗&#8230;</string>
     <string name="toast_crop_profile_banner_fail">個人橫幅裁切失敗&#8230;</string>
 

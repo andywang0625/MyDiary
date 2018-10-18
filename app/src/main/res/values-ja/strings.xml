@@ -95,8 +95,9 @@
     <string name="setting_theme_default_color">デフォルト色</string>
     <string name="setting_theme_apply">アプライ</string>
     <string name="setting_theme_profile_bg">プロフィールの背景</string>
-
-
+    <string name="setting_contacts_import_from_local">Import from Local Contacts</string>
+    <string name="setting_contacts_export_to_local">Export To Local Contacts</string>
+    <string name="setting_contacts_title">通讯录</string>
     <string name="setting_language_title">言語</string>
     <string name="setting_language_hint">言語を選択</string>
 

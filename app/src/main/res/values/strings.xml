@@ -95,8 +95,10 @@
     <string name="setting_theme_default_profile_bg">default\n background</string>
     <string name="setting_theme_default_color">default color</string>
     <string name="setting_theme_apply">apply</string>
+    <string name="setting_contacts_import_from_local">Import from Local Contacts</string>
+    <string name="setting_contacts_export_to_local">Export To Local Contacts</string>
     <string name="setting_theme_profile_bg">Profile Background</string>
-
+    <string name="setting_contacts_title">Contacts</string>
     <string name="setting_language_title">Language</string>
     <string name="setting_language_hint">Choose your language</string>
 

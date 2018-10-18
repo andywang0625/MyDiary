@@ -35,6 +35,7 @@ public class AboutActivity extends AppCompatActivity {
         lincense.append(
                 new LicenseObj("uCrop", "Yalantis", "2016", LicenseObj.APACHE)
                         .getLincense());
+        lincense.append("This Object has contributed by Kanade Wang, see more information:\n\n"+"https://blog.kanadetachibana.com");
         ((TextView) findViewById(R.id.TV_about_text)).setText(lincense.toString());
     }
 

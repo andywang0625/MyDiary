@@ -63,7 +63,7 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
      */
     private Spinner SP_setting_theme, SP_setting_language;
     private ImageView IV_setting_profile_bg, IV_setting_theme_main_color, IV_setting_theme_dark_color;
-    private Button But_setting_theme_default_bg, But_setting_theme_default, But_setting_theme_apply;
+    private Button But_setting_theme_default_bg, But_setting_theme_default, But_setting_theme_apply,But_setting_contacts_import,But_setting_contacts_export;
 
 
     @Override
@@ -84,7 +84,10 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
         But_setting_theme_default = (Button) findViewById(R.id.But_setting_theme_default);
         But_setting_theme_apply = (Button) findViewById(R.id.But_setting_theme_apply);
         But_setting_theme_apply.setOnClickListener(this);
-
+        But_setting_contacts_import=(Button) findViewById(R.id.But_setting_contacts_import);
+        But_setting_contacts_import.setOnClickListener(this);
+        But_setting_contacts_export=(Button) findViewById(R.id.But_setting_contacts_export);
+        But_setting_contacts_export.setOnClickListener(this);
         SP_setting_language = (Spinner) findViewById(R.id.SP_setting_language);
         initSpinner();
         initTheme(themeManager.getCurrentTheme());
@@ -305,6 +308,12 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
                         ColorPickerFragment.newInstance(themeManager.getThemeDarkColor(this));
                 secColorPickerFragment.setCallBack(this, R.id.IV_setting_theme_dark_color);
                 secColorPickerFragment.show(getSupportFragmentManager(), "secColorPickerFragment");
+                break;
+            case R.id.But_setting_contacts_import:
+                Toast.makeText(SettingActivity.this,"Importing...",Toast.LENGTH_LONG).show();
+                break;
+            case R.id.But_setting_contacts_export:
+                Toast.makeText(SettingActivity.this,"Exporting",Toast.LENGTH_LONG).show();
                 break;
 
         }

@@ -198,7 +198,40 @@
                 android:layout_marginBottom="@dimen/setting_group_margin_top"
                 android:layout_marginTop="@dimen/setting_content_margin_top"
                 android:background="@drawable/spinner_bg" />
-
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/setting_content_margin_top"
+                android:background="@drawable/dash_line"
+                android:layerType="software" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/setting_group_margin_top"
+                android:text="@string/setting_contacts_title"
+                android:textColor="@android:color/black"
+                android:textSize="28dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.kiminonawa.mydiary.shared.gui.MyDiaryButton
+                    android:id="@+id/But_setting_contacts_import"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/setting_content_margin_top"
+                    android:text="@string/setting_contacts_import_from_local" />
+                <com.kiminonawa.mydiary.shared.gui.MyDiaryButton
+                    android:id="@+id/But_setting_contacts_export"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/setting_contacts_export_to_local"
+                    ></com.kiminonawa.mydiary.shared.gui.MyDiaryButton>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
